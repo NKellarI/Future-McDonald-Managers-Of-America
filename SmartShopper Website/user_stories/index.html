@@ -6,70 +6,330 @@
     <title>Smart Shopper - User Stories</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="../index.html">Smart Shopper</a>
-        <a href="../design_artifacts.html" class="btn btn-outline-light">Design Artifacts</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../design_artifacts.html">Design Artifacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">User Stories</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
 <header class="bg-primary text-white text-center py-5">
     <div class="container">
-        <h1>User Stories</h1>
-        <p class="lead">User needs and requirements for Smart Shopper.</p>
+        <h1>Smart Shopper User Stories</h1>
+        <p class="lead">80 user stories based on our 16 user scenarios.</p>
+        <p>Each scenario contains five user stories describing user needs and application functionality.</p>
     </div>
 </header>
 
 <main class="container my-5">
 
-    <h2>Shopping List Management</h2>
-    <ul>
-        <li>As a grocery shopper, I want to create a shopping list so that I can organize the items I need.</li>
-        <li>As a grocery shopper, I want to add items to my list so that I can keep track of groceries.</li>
-        <li>As a grocery shopper, I want to remove items so that my list stays accurate.</li>
-        <li>As a grocery shopper, I want to edit item quantities so that my estimated costs are accurate.</li>
-        <li>As a grocery shopper, I want to organize items into categories so that I can find them easily.</li>
-    </ul>
+    <div class="alert alert-info">
+        <strong>About User Stories:</strong>
+        User stories describe application requirements from the perspective of the user.
+        Each story follows the format:
+        <em>As a user, I want something, so that I can achieve a goal.</em>
+    </div>
 
-    <h2>Store Price Comparison</h2>
-    <ul>
-        <li>As a shopper, I want to compare an item's price across stores so that I can find the lowest price.</li>
-        <li>As a shopper, I want to select which stores to compare so that I can view relevant options.</li>
-        <li>As a shopper, I want to see the cheapest store for an item so that I can make an informed decision.</li>
-        <li>As a shopper, I want to view prices side by side so that comparisons are easy.</li>
-        <li>As a shopper, I want to see when prices were updated so that I can judge how current they are.</li>
-    </ul>
+    <!-- PERSONA 1 -->
 
-    <h2>Estimated Store Totals</h2>
-    <ul>
-        <li>As a shopper, I want to see the estimated total for my entire list at each store so that I can compare overall costs.</li>
-        <li>As a shopper, I want totals to update when I edit my list so that the estimate stays current.</li>
-        <li>As a shopper, I want quantities included in the total so that the estimate reflects what I plan to buy.</li>
-        <li>As a shopper, I want to compare complete grocery baskets so that I can choose an affordable store.</li>
-        <li>As a shopper, I want to see the difference between store totals so that I understand potential savings.</li>
-    </ul>
+    <h2 class="mt-5 mb-3">Persona 1: Maya Rodriguez</h2>
+    <p class="text-muted">Budget-Conscious Student</p>
 
-    <h2>Saved Shopping Lists</h2>
-    <ul>
-        <li>As a shopper, I want to save a shopping list so that I can use it again later.</li>
-        <li>As a shopper, I want to name saved lists so that I can identify them easily.</li>
-        <li>As a shopper, I want to reopen a saved list so that I do not have to recreate it.</li>
-        <li>As a shopper, I want to edit saved lists so that I can adjust them for future trips.</li>
-        <li>As a shopper, I want to remove old lists so that my saved lists remain organized.</li>
-    </ul>
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 1: Building a Weekly Shopping List</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a college student, I want to create a weekly shopping list so that I can organize the groceries I need to purchase.</li>
+                <li>As a college student, I want to add grocery items to my list so that I can keep track of everything I need.</li>
+                <li>As a college student, I want to specify the quantity of each item so that I can purchase the correct amount.</li>
+                <li>As a college student, I want to remove items from my list so that I can keep it updated.</li>
+                <li>As a college student, I want to view my entire shopping list so that I can review it before shopping.</li>
+            </ol>
+        </div>
+    </section>
 
-    <h2>Search and Comparison Results</h2>
-    <ul>
-        <li>As a shopper, I want to search for grocery items so that I can add products quickly.</li>
-        <li>As a shopper, I want to see clear store names and prices so that I can understand the results.</li>
-        <li>As a shopper, I want to see which store has the lowest total so that I can make a cost-effective choice.</li>
-        <li>As a shopper, I want to know that prices are estimates so that I understand they may change in store.</li>
-        <li>As a shopper, I want to see potential savings so that I can decide whether comparing stores is worthwhile.</li>
-    </ul>
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 2: Comparing Store Totals</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a budget-conscious shopper, I want to compare my shopping list across multiple stores so that I can find the most affordable option.</li>
+                <li>As a budget-conscious shopper, I want to see the estimated total at each store so that I can compare overall costs.</li>
+                <li>As a budget-conscious shopper, I want to see which store has the lowest total so that I can make an affordable choice.</li>
+                <li>As a budget-conscious shopper, I want to see the difference between store totals so that I can understand how much I could save.</li>
+                <li>As a budget-conscious shopper, I want comparison results displayed clearly so that I can make a decision quickly.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 3: Checking an Individual Item Price</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a shopper, I want to search for a grocery item so that I can quickly find its available prices.</li>
+                <li>As a shopper, I want to compare an item's price across different stores so that I can find the cheapest option.</li>
+                <li>As a shopper, I want to see the store associated with each price so that I know where the item is available.</li>
+                <li>As a shopper, I want to see the lowest available price highlighted so that I can identify the best deal.</li>
+                <li>As a shopper, I want to see when an item's price was last updated so that I can judge how current the information is.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 4: Saving a Weekly List</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a college student, I want to save my shopping list so that I can use it again next week.</li>
+                <li>As a college student, I want to give my saved list a name so that I can identify it easily.</li>
+                <li>As a college student, I want to reopen a saved shopping list so that I do not have to enter all my items again.</li>
+                <li>As a college student, I want to edit a saved list so that I can change items when my grocery needs change.</li>
+                <li>As a college student, I want to delete an old shopping list so that my saved lists stay organized.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- PERSONA 2 -->
+
+    <h2 class="mt-5 mb-3">Persona 2: Jordan Lee</h2>
+    <p class="text-muted">Family Grocery Planner</p>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 5: Planning a Large Grocery Trip</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a parent, I want to create a large grocery list so that I can plan everything my family needs.</li>
+                <li>As a parent, I want to organize groceries into categories so that I can find items more easily.</li>
+                <li>As a parent, I want to enter quantities for each grocery item so that I can account for my family's needs.</li>
+                <li>As a parent, I want to add household products to my shopping list so that I can organize more than just food purchases.</li>
+                <li>As a parent, I want to review my completed list so that I can make sure I have not forgotten anything.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 6: Comparing the Whole Grocery Basket</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a family grocery planner, I want to compare my entire grocery list across stores so that I can find the lowest overall cost.</li>
+                <li>As a family grocery planner, I want each store's total to include all selected items so that I can compare complete grocery baskets.</li>
+                <li>As a family grocery planner, I want quantities included in my estimated totals so that the calculations reflect what my family needs.</li>
+                <li>As a family grocery planner, I want to see unavailable items identified so that I understand when a store cannot provide a complete comparison.</li>
+                <li>As a family grocery planner, I want to see the cheapest overall store so that I can choose where to shop.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 7: Editing the Shopping List</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a parent, I want to add additional items to my grocery list so that I can account for changing household needs.</li>
+                <li>As a parent, I want to change item quantities so that my shopping list reflects what I actually need.</li>
+                <li>As a parent, I want to remove items that I no longer need so that my list stays accurate.</li>
+                <li>As a parent, I want my estimated store totals to update after editing my list so that I can see the new costs.</li>
+                <li>As a parent, I want to review my updated list so that I can confirm all changes before shopping.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 8: Reviewing Potential Savings</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a family grocery planner, I want to see the price difference between stores so that I can identify potential savings.</li>
+                <li>As a family grocery planner, I want to see how much I could save by choosing the lowest-cost store so that I can manage household expenses.</li>
+                <li>As a family grocery planner, I want to compare individual item savings so that I can identify products with better prices.</li>
+                <li>As a family grocery planner, I want to see the estimated total savings for my grocery list so that I can evaluate my shopping options.</li>
+                <li>As a family grocery planner, I want to view savings information alongside store totals so that I can make an informed decision.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- PERSONA 3 -->
+
+    <h2 class="mt-5 mb-3">Persona 3: Alex Morgan</h2>
+    <p class="text-muted">Multi-Store Deal Seeker</p>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 9: Comparing Multiple Stores</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a deal seeker, I want to select multiple grocery stores so that I can compare their prices.</li>
+                <li>As a deal seeker, I want to view the same grocery items across different stores so that I can compare prices directly.</li>
+                <li>As a deal seeker, I want to see each store's estimated grocery total so that I can compare overall costs.</li>
+                <li>As a deal seeker, I want to change which stores are included in my comparison so that I can focus on relevant options.</li>
+                <li>As a deal seeker, I want to see the lowest-cost store clearly identified so that I can make a quick decision.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 10: Finding the Lowest Item Price</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a deal seeker, I want to search for a specific grocery product so that I can compare its prices.</li>
+                <li>As a deal seeker, I want to see prices from multiple stores side by side so that I can identify the best deal.</li>
+                <li>As a deal seeker, I want the lowest item price highlighted so that I can find the cheapest option quickly.</li>
+                <li>As a deal seeker, I want to compare product sizes and quantities when available so that I can make fair price comparisons.</li>
+                <li>As a deal seeker, I want to add a low-priced item to my shopping list so that I can include it in my grocery plans.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 11: Evaluating Trip Savings</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a deal seeker, I want to compare my grocery list totals so that I can determine which store offers the best value.</li>
+                <li>As a deal seeker, I want to see the difference between the highest and lowest store totals so that I can understand potential savings.</li>
+                <li>As a deal seeker, I want to see savings for individual items so that I can identify worthwhile deals.</li>
+                <li>As a deal seeker, I want to review the total estimated savings before shopping so that I can decide whether changing stores is worthwhile.</li>
+                <li>As a deal seeker, I want to see all comparison results together so that I can make a decision without manually calculating prices.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 12: Checking Price Information</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a deal seeker, I want to see when grocery prices were last updated so that I know how recent the information is.</li>
+                <li>As a deal seeker, I want to see which store provided a listed price so that I can identify its source.</li>
+                <li>As a deal seeker, I want to know when prices are estimates so that I understand they may differ from in-store prices.</li>
+                <li>As a deal seeker, I want to identify missing price information so that I do not mistake unavailable prices for free items.</li>
+                <li>As a deal seeker, I want to review available price information before shopping so that I can make a more reliable decision.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- PERSONA 4 -->
+
+    <h2 class="mt-5 mb-3">Persona 4: Sam Carter</h2>
+    <p class="text-muted">Convenience-Focused Shopper</p>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 13: Quickly Creating a Short List</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a busy shopper, I want to create a shopping list quickly so that I can spend less time planning my grocery trip.</li>
+                <li>As a busy shopper, I want to add items using a simple interface so that list creation is easy.</li>
+                <li>As a busy shopper, I want to remove items with minimal steps so that I can quickly correct my list.</li>
+                <li>As a busy shopper, I want to view my list in one place so that I can review everything easily.</li>
+                <li>As a busy shopper, I want to access price comparisons directly from my list so that I do not have to navigate through multiple pages.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 14: Quickly Comparing Stores</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a busy shopper, I want to compare grocery stores with one action so that I can save time.</li>
+                <li>As a busy shopper, I want to see the estimated total for each store so that I can quickly compare costs.</li>
+                <li>As a busy shopper, I want the lowest-cost option clearly displayed so that I can make a decision without extra steps.</li>
+                <li>As a busy shopper, I want comparison results presented in a simple layout so that I can understand them easily.</li>
+                <li>As a busy shopper, I want to avoid unnecessary information so that I can focus on the prices that matter.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 15: Returning to a Saved List</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a busy shopper, I want to save my grocery list so that I can access it during future shopping trips.</li>
+                <li>As a busy shopper, I want to quickly open a saved list so that I do not have to recreate it.</li>
+                <li>As a busy shopper, I want to see the name of each saved list so that I can select the correct one.</li>
+                <li>As a busy shopper, I want to make quick changes to a saved list so that it stays relevant to my needs.</li>
+                <li>As a busy shopper, I want to remove completed or outdated lists so that I can keep my saved lists organized.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <h4>Scenario 16: Understanding the Results</h4>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>As a busy shopper, I want to see store totals clearly so that I can understand my grocery costs quickly.</li>
+                <li>As a busy shopper, I want the cheapest store highlighted so that I can identify the best option easily.</li>
+                <li>As a busy shopper, I want to see potential savings so that I can decide whether comparing stores is worthwhile.</li>
+                <li>As a busy shopper, I want prices and store names displayed together so that I can understand where each price comes from.</li>
+                <li>As a busy shopper, I want simple explanations of estimated prices so that I can understand the comparison results.</li>
+            </ol>
+        </div>
+    </section>
+
+    <div class="alert alert-success mt-5">
+        <h4>Summary</h4>
+        <p class="mb-0">
+            Smart Shopper has 4 personas, 16 scenarios, and 80 user stories.
+            These user stories help define the requirements and features needed
+            to make grocery shopping easier and more affordable.
+        </p>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="../design_artifacts.html" class="btn btn-secondary">Back to Design Artifacts</a>
+        <a href="../index.html" class="btn btn-primary">Home</a>
+    </div>
 
 </main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">Smart Shopper - Shop Smart. Spend Less.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
